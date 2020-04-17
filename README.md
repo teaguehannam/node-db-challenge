@@ -1,21 +1,22 @@
 
-- Explain the difference between `Relational Databases` and `SQL`.
+- Explain the difference between `Relational Databases` and `SQL`. -
 
   Relational databases are stored in spreadsheet form (rows+columns)
   SQL is the language that manipulates this data
 
-- Why do tables need a `primary key`?
+- Why do tables need a `primary key`? -
 
   Primary key is used for unique identification on each entry. 
   Can be used to connect tables
 
-- What is the name given to a table column that references the primary key on another table.
+- What is the name given to a table column that references the primary key on another table. -
 
   Foreign Keys and primary keys connects tables together
 
-- What do we need in order to have a _many to many_ relationship between two tables.
+- What do we need in order to have a _many to many_ relationship between two tables. -
 
-  A unique Identifier like a student ID, and it is connected to a class which has a roster of multiple students
+  A table that pulls from multiple tables into one. This table shows relationship between two tables using a unique ID
+
 
 
 ## Minimum Viable Product
@@ -30,13 +31,13 @@
   - [x] when adding a `task` the client must provide a description, the notes are optional.
   - [x] when adding a `task` the client must provide the `id` of an existing project.
   - [x] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
-- [ ] Build an API with endpoints for:
+- [x] Build an API with endpoints for:
   - [x] adding resources.
   - [x] retrieving a list of resources.
   - [x] adding projects.
   - [x] retrieving a list of projects.
   - [x] adding tasks.
-  - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
+  - [x] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
 
 ### Entities
 

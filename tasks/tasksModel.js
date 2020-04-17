@@ -8,7 +8,7 @@ module.exports = {
 
 function getTasks(){
     return db('tasks')
-        .select('tasks.description as taskDescription', 'projects.name as project', 'projects.description')
+        .select('tasks.description', 'projects.name', 'projects.description')
         .join('projects', 'tasks.project_id', 'projects.id')
 }
 
